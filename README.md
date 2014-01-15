@@ -9,8 +9,10 @@ WikiIndexer
 	->Click Next/Finish
  Run the project. It should execute.
  Main method is in edu.buffalo.cse.ir.wikiindexer.SingleRunner.java.(Starting point)
+ 
+ Optional Configuration changs:
  By default, this program takes five_entries.xml as input file. This file is present in "files" folder. 
- In case user want to parse his/her own wikipedia xml file or make it configurable,<br/> user has to do two configuration changes.
+ In case user want to parse his/her own wikipedia xml file or make it configurable,<br/> user has to do two configuration  changes.
 	1. Add the xml file to files/properties.config. Currently it is set to as follows;
 		root.dir=/home/rahul/Desktop/WikiIndexer(path)
 		dump.filename=five_entries.xml(filename)
