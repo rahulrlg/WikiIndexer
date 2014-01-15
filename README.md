@@ -10,7 +10,7 @@ WikiIndexer
  Run the project. It should execute.
  Main method is in edu.buffalo.cse.ir.wikiindexer.SingleRunner.java.(Starting point)
  By default, this program takes five_entries.xml as input file. This file is present in "files" folder. 
- In case user want to parse his/her own wikipedia xml file or make it configurable, user has to do two configuration changes.
+ In case user want to parse his/her own wikipedia xml file or make it configurable,<br/> user has to do two configuration changes.
 	1. Add the xml file to files/properties.config. Currently it is set to as follows;
 		root.dir=/home/rahul/Desktop/WikiIndexer(path)
 		dump.filename=five_entries.xml(filename)
@@ -20,7 +20,7 @@ WikiIndexer
 Description:
 ===================
  This project takes the wikipedia xml file as input.It consist of wikipedia articles/pages/document.
- It cleans & parses the content which means remove the wiki markup.(Check http://en.wikipedia.org/wiki/Help:Wiki_markup <br/> for details on   wikimarkup)
+ It cleans & parses the content which means remove the wiki markup.<br/>(Check http://en.wikipedia.org/wiki/Help:Wiki_markup <br/> for details on   wikimarkup)
  Tokenize the content.
 	For Example: Input-> This is a Wikipedia page on scandals.
 		     Output-> This, is, a, Wikipedia, page, on, scandals
@@ -30,5 +30,6 @@ Description:
 
 Usage:
 ==================
-This program can be used in developing a search Engine. Whenever user types in query say "scandals". it looks into the <br/> index files and return the document id. and corresponding document can be displayed.
+This program can be used in developing a search Engine. Whenever user types in query say "scandals". <br/> it looks into the 
+ index files and return the document id. and corresponding document can be displayed.
 </pre>
