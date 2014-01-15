@@ -4,7 +4,6 @@
 //
 package edu.buffalo.cse.ir.wikiindexer.wikipedia;
 
-import static edu.buffalo.cse.ir.wikiindexer.wikipedia.WikipediaParser.lstSectionsData;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Iterator;

@@ -4,6 +4,7 @@
 package edu.buffalo.cse.ir.wikiindexer.indexer;
 
 import edu.buffalo.cse.ir.wikiindexer.IndexerConstants;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -12,6 +13,7 @@ import java.io.ObjectOutputStream;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Properties;
 
 /**
@@ -231,6 +233,7 @@ public class IndexWriter implements Writeable {
     public void writeToDisk() throws IndexerException {
         // TODO Implement this method
         //.println("INdexing start:" + idx+":"+mapIndex);
+    	int count=0;
         try {
             //test();
         	
@@ -239,8 +242,16 @@ public class IndexWriter implements Writeable {
             FileOutputStream f = new FileOutputStream(file);
             ObjectOutputStream s = new ObjectOutputStream(f);
             s.writeObject(mapIndex);
-            
-            //.println("INdexing ends:" + idx);
+            Iterator it = mapIndex.entrySet().iterator();
+            System.out.println("Index Output in format 'token= {document id= frequency of token}'");
+            while (it.hasNext()) {
+            	if(count>10) break;
+                Map.Entry pairs = (Map.Entry)it.next();
+                System.out.println(pairs.getKey() + " = " + pairs.getValue());
+                it.remove(); // avoids a ConcurrentModificationException
+                count++;
+            }
+           
         } catch (FileNotFoundException ex) {
             System.err.println("Error in writeToDisk(). Message:" + ex.getMessage());
         } catch (IOException ex) {

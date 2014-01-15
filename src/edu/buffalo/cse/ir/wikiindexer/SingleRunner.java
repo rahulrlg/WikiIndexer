@@ -120,7 +120,7 @@ public class SingleRunner {
 			pool.submit(new DocumentTransformer(tknizerMap, doc));
 		}
 		
-		System.out.println("Submitted tokenization: " + (System.currentTimeMillis() - start));
+		//System.out.println("Submitted tokenization: " + (System.currentTimeMillis() - start));
 		
 		IndexableDocument idoc;
 		SharedDictionary docDict = new SharedDictionary(properties, INDEXFIELD.LINK);
@@ -183,7 +183,7 @@ public class SingleRunner {
 			pctComplete = (i * 100.0d) / numdocs;
 			
 			if (pctComplete % 10 == 0) {
-				System.out.println(pctComplete+ "% submission complete");
+				//System.out.println(pctComplete+ "% submission complete");
 			}
 		}
 		
