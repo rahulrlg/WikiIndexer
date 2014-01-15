@@ -19,15 +19,15 @@ WikiIndexer
 		2. mode. (There are two modes -i and -t)
 Description:
 ===================
-This project takes the wikipedia xml file as input.It consist of wikipedia articles/pages/document.
-It cleans & parses the content which means remove the wiki markup.
+1.This project takes the wikipedia xml file as input.It consist of wikipedia articles/pages/document.
+2.It cleans & parses the content which means remove the wiki markup.
 (Check http://en.wikipedia.org/wiki/Help:Wiki_markupfor details on wikimarkup)
-Tokenize the content.
+3.Tokenize the content.
 	For Example: Input-> This is a Wikipedia page on scandals.
 		     Output-> This, is, a, Wikipedia, page, on, scandals
-Stop words are removed.
+4.Stop words are removed.
 		     Output-> Wikipedia, page, scandals
-Index the wikipedia pages based on tokens. Imagine it as table with two columns "tokens" and "document Id".
+5.Index the wikipedia pages based on tokens. Imagine it as table with two columns "tokens" and "document Id".
 
 Usage:
 ==================
