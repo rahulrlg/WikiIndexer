@@ -17,11 +17,9 @@ WikiIndexer
 	2. Run the program with two runtime arguments. Set the runtime arguments in eclipse.
 		1. path of the properties file.It is present in "files" folder.
 		2. mode. (There are two modes -i and -t)
-	
-
 Description:
 ===================
- This project takes the wikipedia xml file as input.This file consist of wikipedia articles/pages/document.
+ This project takes the wikipedia xml file as input.It consist of wikipedia articles/pages/document.
  It cleans & parses the content which means remove the wiki markup.(Check http://en.wikipedia.org/wiki/Help:Wiki_markup for details on   wikimarkup)
  Tokenize the content.
 	For Example: Input-> This is a Wikipedia page on scandals.
@@ -30,12 +28,7 @@ Description:
 		     Output-> Wikipedia, page, scandals
  Index the wikipedia pages based on tokens. Imagine it as table with two columns "tokens" and "document Id".
 
-
-
 Usage:
 ==================
 This program can be used in developing a search Engine. Whenever user types in query say "scandals". it looks into the index files and return the document id. and corresponding document can be displayed.
-
-
-
 </pre>
