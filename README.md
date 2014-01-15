@@ -1,6 +1,6 @@
 WikiIndexer
 ===========
- 
+ <pre>
  Steps to set-up the program. These steps are provided with eclipse as envirionment.
 	->Download the Zip file to your local system
 	->Extract it.
@@ -37,3 +37,5 @@ Usage:
 This program can be used in developing a search Engine. Whenever user types in query say "scandals". it looks into the index files and return the document id. and corresponding document can be displayed.
 
 
+
+</pre>
