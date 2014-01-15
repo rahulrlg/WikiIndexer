@@ -20,7 +20,8 @@ WikiIndexer
 Description:
 ===================
  This project takes the wikipedia xml file as input.It consist of wikipedia articles/pages/document.
- It cleans & parses the content which means remove the wiki markup.<br/>(Check http://en.wikipedia.org/wiki/Help:Wiki_markup <br/> for details on   wikimarkup)
+ It cleans & parses the content which means remove the wiki markup.<br/>
+ (Check http://en.wikipedia.org/wiki/Help:Wiki_markupfor details on wikimarkup)
  Tokenize the content.
 	For Example: Input-> This is a Wikipedia page on scandals.
 		     Output-> This, is, a, Wikipedia, page, on, scandals
